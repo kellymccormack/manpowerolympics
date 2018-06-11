@@ -1,0 +1,40 @@
+html,
+body {
+
+	@media only screen and (max-width: 767px) {
+		overflow-x: hidden;
+	}
+}
+
+html {
+	cursor: default;
+}
+
+body {
+	font-size: 15px; 
+	font-family: 'DIN Next W01 Regular', helvetica, arial, sans-serif;
+	line-height: 1.4;
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #66a89a;
+
+	@media only screen and (max-width: 767px) {
+		font-size: 12px; 
+	}
+}
+
+a {
+	color: $link-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+} 
+
+.italic {
+	font-style: italic;
+}

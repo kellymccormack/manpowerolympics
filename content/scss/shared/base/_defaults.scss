@@ -1,0 +1,105 @@
+:focus {
+	outline: none;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.reduced {
+	margin-bottom: 0;
+}
+
+.assistive-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.hide {
+	display: none;
+}
+
+[href^="tel:"],
+[href^="sms:"] {
+
+	.no-mobile & {
+		text-decoration: none;
+		color: inherit;
+		cursor: inherit;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
+@media screen {
+
+	.print {
+		display: none !important;
+	}
+}
+
+@media print {
+
+	@page {	
+		margin: 1cm;
+	}
+
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+	}
+
+	nav,
+	embed,
+	object,
+	video {
+		display: none !important;
+	}
+
+	pre,
+	blockquote,
+	img {
+		page-break-inside: avoid;
+	}
+
+	.no-print {
+		display: none !important;
+	}
+
+}

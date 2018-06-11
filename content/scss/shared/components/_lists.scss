@@ -1,0 +1,40 @@
+ol,
+ul,
+dl {
+	margin: 0 0 1em;
+}
+
+li {
+	margin: 0 0 0.25em;
+}
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+.list-inline {
+	@extend .list-unstyled;
+
+	li {
+		display: inline-block;
+		margin: 0 10px 0 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&.piped li {
+		margin-right: 0;
+
+		&:after {
+			content: '\007c';
+			margin: 0 7px 0 10px;
+		}
+
+		&:last-child:after {
+			content: none;
+		}
+	}
+}

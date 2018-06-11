@@ -1,0 +1,20 @@
+// brand colors
+
+$brand-primary: #66a89a !default;
+$brand-orange: #e6794a !default;
+
+
+
+// base
+
+$content-max-width: 2600px !default;
+$column-gutter-width: 10px !default;
+
+
+// scaffolding
+
+$body-bg: #fff !default;
+$color-base: #333 !default;
+
+$link-color: $brand-primary !default;
+$link-hover-color: darken($link-color, 15%) !default;
